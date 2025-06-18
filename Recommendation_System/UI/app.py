@@ -329,9 +329,9 @@ if __name__ == '__main__':
         print(f"📁 Output directory: {OUTPUT_PATH}")
         print(f"📁 Future suggestions directory: {FUTURE_SUGGESTIONS_PATH}")
         print("🌐 Starting Flask application...")
-        print("🔗 Access at: http://localhost:5000")
+        print("🔗 Access at: http://localhost:5001")
     else:
         print("❌ Warning: Recommendation engine not available")
     
     print("=" * 50)
-    app.run(debug=True, host='0.0.0.0', port=5000) 
+    app.run(debug=True, host='0.0.0.0', port=5001) 
