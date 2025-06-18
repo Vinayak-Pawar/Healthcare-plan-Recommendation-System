@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Recommendation System | AI-Powered Medical Insights</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>🏥 Healthcare Recommendation System</h1>
+            <p class="subtitle">AI-Powered Medical Decision Support | Personalized Treatment Plans</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Patient Search & Plan Generation -->
+        <section class="search-section">
+            <h2>🔍 Patient Search & Health Plan Generation</h2>
+            <p class="mb-2">Search for a patient by name or ID, then generate personalized AI-powered health recommendations.</p>
+            
+            <div class="search-form">
+                <div class="form-group">
+                    <input type="text" 
+                           id="searchInput" 
+                           class="form-control" 
+                           placeholder="Enter patient name or ID (e.g., Patient ID, SSN(Social Security Number), Passport Number, Driver's License )"
+                           autocomplete="off">
+                </div>
+            </div>
+
+            <!-- Search Results Container -->
+            <div id="searchResults"></div>
+
+            <!-- Generate Plan Button -->
+            <div class="mt-3 text-center">
+                <button type="button" 
+                        id="generatePlan" 
+                        class="btn btn-success" 
+                        disabled>
+                    🤖 Generate Health Plan
+                </button>
+                <p class="mt-2" style="color: #6c757d; font-size: 0.9rem;">
+                    💡 Tip: Search and select a patient above, or enter a patient ID directly to enable the generate button
+                </p>
+            </div>
+        </section>
+
+        <!-- Sample Patient IDs for Testing -->
+        <section class="search-section">
+            <h3>🧪 Sample Patient IDs for Testing</h3>
+            <p style="color: #6c757d; margin-bottom: 1rem;">
+                Click on any of these sample patient IDs to test the system:
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <button class="btn btn-info btn-sm" onclick="document.getElementById('searchInput').value='8a79e149-26a7-4200-b4fe-e8165e7b67e0'; document.getElementById('generatePlan').disabled=false; document.getElementById('generatePlan').textContent='Generate Health Plan for Ivory Kertzmann';">
+                    Ivory Kertzmann
+                </button>
+                <button class="btn btn-info btn-sm" onclick="document.getElementById('searchInput').value='6ace7b81-a04c-4424-9715-4168ab3e007c'; document.getElementById('generatePlan').disabled=false; document.getElementById('generatePlan').textContent='Generate Health Plan for Refugio Barton';">
+                    Refugio Barton
+                </button>
+                <button class="btn btn-info btn-sm" onclick="document.getElementById('searchInput').value='f3f498e2-eadf-4fcf-9ecb-6462c9f742d7'; document.getElementById('generatePlan').disabled=false; document.getElementById('generatePlan').textContent='Generate Health Plan for Felix Jaskolski';">
+                    Felix Jaskolski
+                </button>
+                <button class="btn btn-info btn-sm" onclick="document.getElementById('searchInput').value='802e4305-78e0-423b-9604-69b5d2f9a759'; document.getElementById('generatePlan').disabled=false; document.getElementById('generatePlan').textContent='Generate Health Plan for Hobert Reynolds';">
+                    Hobert Reynolds
+                </button>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="resultsSection" class="results-section" style="display: none;">
+            <div class="results-header" id="resultsHeader">
+                Health Plan Results
+            </div>
+            <div class="results-content" id="resultsContent">
+                <!-- Results will be populated here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="search-section">
+            <h3>📋 System Information</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div>
+                    <h4>🤖 AI Integration</h4>
+                    <ul style="margin-left: 1.5rem; color: #6c757d;">
+                        <li>OpenAI GPT-4, Perplexity, Claude Sonnet 3.5, Gemini for medical analysis</li>
+                        <li> Gemini at the end for report generation.</li>
+                        <li>Multi-AI consensus recommendations</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>💊 Drug Safety Features</h4>
+                    <ul style="margin-left: 1.5rem; color: #6c757d;">
+                        <li>Open-FDA database integration</li>
+                        <li>Drugbank database integration</li>
+                        <li>RxNorm medication verification</li>
+                        <li>Drug interaction checking</li>
+                        <li>Contraindication analysis</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>👥 Patient Analysis</h4>
+                    <ul style="margin-left: 1.5rem; color: #6c757d;">
+                        <li>Similar patient matching</li>
+                        <li>Treatment outcome prediction</li>
+                        <li>Personalized care plans</li>
+                        <li>Evidence-based recommendations</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>📊 Report Generation</h4>
+                    <ul style="margin-left: 1.5rem; color: #6c757d;">
+                        <li>Current status analysis</li>
+                        <li>Future health planning</li>
+                        <li>Downloadable medical reports</li>
+                        <li>JSON data for integration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 2rem; color: #6c757d; border-top: 1px solid #e9ecef; margin-top: 3rem;">
+        <p>🏥 Healthcare Recommendation System &copy; 2024 | AI-Powered Medical Decision Support</p>
+        <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+            ⚠️ For educational and research purposes only. Not intended as a substitute for professional medical advice.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 
