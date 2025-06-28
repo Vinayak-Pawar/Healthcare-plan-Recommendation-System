@@ -21,29 +21,43 @@ The system follows a sophisticated workflow to generate personalized healthcare 
 ```mermaid
 graph TD;
     subgraph "User Interface (Flask)"
-        A[User Enters Patient ID] --> B{Flask App};
+        A[User Enters Patient ID]
+        B{Flask App}
+        N[Display Plan in UI]
     end
 
-    subgraph "Recommendation Engine<br/>(r_engine.py)"
-    
-        B --> C[Get Patient Data];
-        C --> D{Cosine Similarity};
-        D --> E[Find Similar Patients];
-        C --> F[Get Patient History];
-        E & F --> G[Generate Prompt for LLMs];
-        G --> H{{LLM APIs<br/>GPT-4, Claude, Gemini}};
-        H --> I[Generate Draft Plan];
+    subgraph "Recommendation Engine (r_engine.py)"
+        C[Get Patient Data]
+        D{Cosine Similarity}
+        E[Find Similar Patients]
+        F[Get Patient History]
+        G[Generate Prompt for LLMs]
+        H{{LLM APIs<br/>GPT-4, Claude, Gemini}}
+        I[Generate Draft Plan]
     end
 
     subgraph "Real-Time Verification"
-        I --> J{Verify Medications};
-        J --> K{{Medical APIs<br/>RXNorm, OpenFDA, DrugBank}};
-        K --> L[Enrich and Validate Plan];
+        J{Verify Medications}
+        K{{Medical APIs<br/>RXNorm, OpenFDA, DrugBank}}
+        L[Enrich and Validate Plan]
     end
     
-    L --> M[Final Personalized Plan];
-    M --> B;
-    B --> N[Display Plan in UI];
+    M[Final Personalized Plan]
+    
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    C --> F
+    E & F --> G
+    G --> H
+    H --> I
+    I --> J
+    J --> K
+    K --> L
+    L --> M
+    M --> B
+    B --> N
 
     style A fill:#f9f,stroke:#333,stroke-width:2px;
     style N fill:#f9f,stroke:#333,stroke-width:2px;
