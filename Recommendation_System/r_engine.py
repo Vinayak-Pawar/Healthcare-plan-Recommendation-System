@@ -43,7 +43,7 @@ try:
         print("Warning: Google Gemini API Key not found in secrets.yaml. Gemini calls will be skipped.")
 
 except FileNotFoundError:
-    print("ℹ️  Running without API keys (secrets.yaml not found). Basic functionality available.")
+    print("Error: secrets.yaml not found. Please create it with your API keys.")
     OPENAI_API_KEY = None
     ANTHROPIC_API_KEY = None
     PERPLEXITY_API_KEY = None
