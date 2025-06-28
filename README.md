@@ -140,4 +140,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 A special thanks to my mentor and team leader, **Sheetal N.**, for her invaluable guidance and support throughout the development of this project.
+
+I would also like to thank **Darshana Jadhav** for her innovative UI and Figma designs, which were crucial in designing the web interface.
  
