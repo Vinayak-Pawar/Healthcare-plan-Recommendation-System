@@ -27,6 +27,7 @@ graph TD;
     end
 
     subgraph "Recommendation Engine (r_engine.py)"
+        Spacer("")
         C[Get Patient Data]
         D{Cosine Similarity}
         E[Find Similar Patients]
@@ -45,7 +46,8 @@ graph TD;
     M[Final Personalized Plan]
     
     A --> B
-    B --> C
+    B --> Spacer
+    Spacer --> C
     C --> D
     D --> E
     C --> F
@@ -61,6 +63,7 @@ graph TD;
 
     style A fill:#f9f,stroke:#333,stroke-width:2px;
     style N fill:#f9f,stroke:#333,stroke-width:2px;
+    style Spacer fill:none,stroke:none;
 ```
 
 ## 🚀 Getting Started
