@@ -143,4 +143,32 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 A special thanks to my mentor and team leader, **Sheetal N.**, for her invaluable guidance and support throughout the development of this project.
 
 I would also like to thank **Darshana Jadhav** for her innovative UI and Figma designs, which were crucial in designing the web interface.
+
+## 🖼️ Project Screenshots
+
+Here's a sneak peek into the application's interface and capabilities:
+
+**Main Dashboard & Patient Search**
+*The clean, intuitive main screen where users can search for patients or select from a list of samples.*
+![Main Screen](assets/images/Main-Screen.png)
+
+**Real-time Plan Generation**
+*The system in action, providing real-time feedback as it analyzes patient data, finds similar cases, and queries AI models.*
+![Generating AI Health Plan](assets/images/AI-Generating-Health-Plan.png)
+
+**Comprehensive Patient Status**
+*A detailed view of the current patient's status, including conditions, allergies, and recent measurements.*
+![Current Patient Status](assets/images/Current-Status.png)
+
+**Similar Patients Analysis**
+*The powerful patient similarity feature, showing matched patients and their similarity scores.*
+![Similar Patients Analysis](assets/images/Similar-Patients.png)
+
+**AI-Generated Health Plan**
+*The final, AI-generated health plan with detailed medication recommendations and treatment advice.*
+![AI-Generated Health Plan](assets/images/AI-Generated-Health-Plan.png)
+
+**Downloadable Reports**
+*Easily download the generated reports, including the current status and the AI-powered recommendations.*
+![Download Options](assets/images/Download-options.png)
  
