@@ -51,8 +51,6 @@ env/
 
 # Screenshots
 Screenshot*.png
-/Recommendation_System/Output/
-/Recommendation_System/Future_Suggestions/
 *.pyc
 __pycache__/
 secrets.yaml
