@@ -1,3 +1,5 @@
+![Project Banner](assets/images/Advanced%20AI-Powered%20Healthcare%20Plan%20Recommendation%20System.png)
+
 # 🏥 Advanced AI-Powered Healthcare Plan Recommendation System
 
 ![Python](https://img.shields.io/badge/python-3.11-blue.svg)
