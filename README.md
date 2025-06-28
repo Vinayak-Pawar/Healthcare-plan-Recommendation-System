@@ -24,7 +24,7 @@ graph TD;
         A[User Enters Patient ID] --> B{Flask App};
     end
 
-    subgraph "Recommendation Engine (r_engine.py)"
+    subgraph "Recommendation Engine<br/>(r_engine.py)"
     
         B --> C[Get Patient Data];
         C --> D{Cosine Similarity};
