@@ -43,8 +43,18 @@ env/
 *~
 
 # Project specific
-*.csv
-*.json
-*.txt
-*.pdf
-*.docx 
+# *.csv
+# *.json
+# *.txt
+# *.pdf
+# *.docx
+
+# Screenshots
+Screenshot*.png
+/Recommendation_System/Output/
+/Recommendation_System/Future_Suggestions/
+*.pyc
+__pycache__/
+secrets.yaml
+**/secrets.yaml
+*secrets.yaml 
