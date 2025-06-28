@@ -1,4 +1,4 @@
-# 🏥 Advanced AI-Powered Healthcare Recommendation System
+# 🏥 Advanced AI-Powered Healthcare Plan Recommendation System
 
 ![Python](https://img.shields.io/badge/python-3.11-blue.svg)
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
