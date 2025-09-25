@@ -174,3 +174,6 @@ Here's a sneak peek into the application's interface and capabilities:
 *Easily download the generated reports, including the current status and the AI-powered recommendations.*
 ![Download Options](assets/images/Download-options.png)
  
+License
+
+This project is licensed under [AGPL-3.0 / All Rights Reserved / CC BY-NC etc.]
